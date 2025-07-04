@@ -1,0 +1,4 @@
+@host=http://localhost:3000/products
+
+GET {{ host }} HTTP/1.1
+###
