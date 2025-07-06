@@ -2,3 +2,27 @@
 
 GET {{ host }} HTTP/1.1
 ###
+
+GET {{ host }}/13 HTTP/1.1
+###
+
+POST {{ host }} HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Producto 6",
+    "price": 50.20
+}
+###
+
+PATCH {{ host }}/853 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 6,
+    "name": "Mentolatum",
+    "price": 1.50
+}
+###
+
+DELETE {{ host }}/487 HTTP/1.1
